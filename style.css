@@ -1,0 +1,415 @@
+/* HOME SECTION */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+ }
+
+ body{
+    background-color: rgb(255, 255, 255);
+    min-height: 2000px;
+ }
+
+ .container {
+    width: 100%;
+    height: 100%;
+ }
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around !important;
+}    
+
+header img {
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    transition: all 0.4s; 
+}
+
+header img:hover {
+    transform: scale(1.20);
+}
+
+header h1 {
+    padding-top: 10px;
+    padding-left: 5px;
+    cursor: pointer;
+    color:  rgb(42, 42, 42);
+}
+
+header h1 span {
+    color: rgb(42, 42, 42);
+}
+
+header ul {
+    margin-top: 10px;
+}
+
+header ul li {
+    padding: 5px 20px;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+header ul li a {
+    font-size: 20px;
+    color:  rgb(42, 42, 42);
+    font-weight: 600;
+    transition: color 0.5s ease;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: rgb(59, 155, 21);
+    border-bottom: 2px solid  rgb(59, 155, 21);
+}
+
+header input {
+    padding: 8px 20px;
+    background-color:rgb(59, 155, 21);
+    color: rgb(245, 245, 245);
+    font-weight: 700;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+header input:hover {
+    transform: scale(1.20);
+    background-color: rgb(44, 111, 0);
+}
+
+.container .content {
+    width: 100%;
+    height: 90vh;
+}
+
+.content .left {
+    width: 45%;
+    padding: 100px;
+    margin-right: 50px;
+}
+
+.content .left h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(162, 162, 162, 0.5); /* Menambah bayangan dengan warna dan jarak yang diinginkan */
+}
+
+.left img {
+    max-width: 30%;
+    height: auto;
+}
+
+.content .left p {
+    font-size: 16px;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+}
+
+.content input {
+    padding: 8px 20px;
+    background-color: rgb(59, 155, 21);
+    color: black;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.content input:hover {
+    transform: scale(1.1);
+    background-color: rgb(44, 111, 0);
+    color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content .right{
+    width: 40%;
+    position: relative;
+}
+
+.content .right img {
+    margin-top: -60px;
+    width: 60%; 
+    margin-left: 100px;
+    transition: all 0.4s;
+    border: 4px solid #000000; /* Ganti warna dan ketebalan border sesuai kebutuhan */
+    border-radius: 30px; /* Optional: Untuk memberikan sudut border yang melengkung */
+    background-color: rgb(208, 208, 208);
+}
+
+.content .right img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ABOUT SECTION */
+#about {
+    background-color: rgb(229, 229, 229); /* Warna latar belakang untuk bagian about */
+    padding: 80px 0; /* Padding untuk atas dan bawah */
+    display: flex; /* Menggunakan fleksbox untuk konten */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    text-align: center; /* Pusatkan teks dalam konten */
+}
+
+#about .container {
+    max-width: 1200px; /* Lebar maksimum untuk konten */
+    margin: auto; /* Pusatkan konten */
+}
+
+#about .content {
+    display: flex;
+    flex-direction: column; /* Tampilkan konten dalam kolom */
+    align-items: center; /* Pusatkan konten dalam kolom */
+}
+
+#about .left {
+    width: 100%;
+    margin-bottom: 40px; /* Tambahkan sedikit ruang antara teks dan gambar pada layar yang lebih kecil */
+}
+
+#about .left h2 {
+    font-size: 36px;
+    color: #000000; /* Warna teks */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(224, 15, 15, 0.5); /* Bayangan teks */
+}
+
+#about .left p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.6; /* Jarak antara baris */
+}
+
+#about .right {
+    width: 50%;
+    margin-left: 30px;
+}
+
+/* Media query untuk desain responsif */
+@media screen and (max-width: 768px) {
+    #about .content {
+        flex-direction: column; /* Ubah ke tata letak kolom pada layar yang lebih kecil */
+    }
+
+    #about .left,
+    #about .right {
+        width: 100%;
+        margin-bottom: 40px; /* Tambahkan sedikit ruang antara teks dan gambar pada layar yang lebih kecil */
+    }
+}
+
+#experience {
+    background-color: #7e7e7e;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#experience .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#experience h2 {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(224, 15, 15, 0.5); /* Bayangan teks */
+}
+
+.experience-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.experience-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-item .company {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.experience-item .date {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.experience-item .description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* EDUCATION SECTION */
+#education {
+    padding: 100px 0;
+    background-color:  rgb(255, 255, 255);
+}
+
+.content-top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content-top h3 {
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px; 
+    text-shadow: 2px 2px 4px rgba(224, 15, 15, 0.5); /* Bayangan teks */
+}
+
+.content-top p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(0, 0, 0, 0.5) inset;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imgbox {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imgbox img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.content-card {
+    padding: 20px;
+}
+
+.content-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(224, 15, 15, 0.5); /* Bayangan teks */
+}
+
+#contact p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form textarea {
+    height: 150px;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    margin-top: 40px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
